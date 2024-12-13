@@ -1,0 +1,95 @@
+/* Profile Details Container */
+.profile-details-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title Styling */
+  .profile-details-container h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  
+  /* Description Styling */
+  .profile-details-container .description {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Section */
+  .profile-details-container .contact-section {
+    margin-bottom: 20px;
+  }
+  
+  .profile-details-container .contact-section h6 {
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact List */
+  .profile-details-container .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .profile-details-container .contact-list li {
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .profile-details-container .contact-list li span {
+    color: #888;
+  }
+  
+  /* Interests Section */
+  .profile-details-container .interests-section {
+    margin-bottom: 20px;
+  }
+  
+  .profile-details-container .interests-section h6 {
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  /* Interest List */
+  .profile-details-container .interests-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .profile-details-container .interests-list li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Buttons Styling */
+  .profile-details-container .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profile-details-container .back-button:hover {
+    background-color: #1565c0;
+  }
+  

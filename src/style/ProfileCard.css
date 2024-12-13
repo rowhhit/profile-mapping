@@ -1,0 +1,125 @@
+/* Ensure the profile list doesn't overflow */
+.profile-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+/* Ensure profile cards fit within the container */
+.profile-card {
+    max-width: 360px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 65px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for profile cards */
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile image styling */
+.profile-image {
+    width: 100%;
+    object-fit: cover;
+    border-bottom: 4px solid #f4f4f4;
+}
+
+/* Profile content styling */
+.profile-content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Profile name styling */
+.profile-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Profile description styling */
+.profile-description {
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Buttons container styling */
+.profile-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Button styles */
+.custom-button {
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.custom-button.primary {
+    background: #4caf50;
+}
+
+.custom-button.primary:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.custom-button.secondary {
+    background: #008cba;
+}
+
+.custom-button.secondary:hover {
+    background: #007bb5;
+    transform: translateY(-2px);
+}
+
+/* Focus State */
+.custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Load More Button Styles */
+.load-more {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bb5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.load-more:hover {
+    background-color: #005f8e;
+}

@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+/* Container */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Form Section */
+.form-section, .list-section {
+  width: 45%;
+  min-width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-section:hover, .list-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-section h5, .list-section h5 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #444;
+  text-align: center;
+}
+
+/* Form Styling */
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-section form .MuiTextField-root {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.form-section form button {
+  margin-top: 10px;
+  background: linear-gradient(90deg, #007bff, #0056d2);
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-section form button:hover {
+  background: linear-gradient(90deg, #0056d2, #0042a1);
+}
+
+/* Profile List Section */
+.list-section .profile-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.list-section .profile-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.list-section .profile-card .profile-info {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.list-section .profile-card button {
+  margin-left: 8px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.list-section .profile-card button.edit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.list-section .profile-card button.edit-btn:hover {
+  background-color: #0056d2;
+}
+
+.list-section .profile-card button.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.list-section .profile-card button.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .form-section, .list-section {
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+/* Dialog */
+.dialog-content {
+  font-size: 1rem;
+  color: #555;
+}
+
+.dialog-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.dialog-actions button {
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dialog-actions button.primary-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.dialog-actions button.primary-btn:hover {
+  background-color: #0056d2;
+}
